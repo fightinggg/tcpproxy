@@ -12,7 +12,7 @@ $ docker run -it --rm -e "proxyurl=【内网IP】:【内网端口】" -p 【云�
 我有一个正在运行的docker容器，但是他没有设置暴露端口，我希望把容器的端口暴露到宿主机上
 
 ```shell
-$ docker run -it --rm -e "proxyurl=【容器名】:【容器端口】" -p 【云服务器端口】:80  fightinggg/tcpproxy --link 【容器名】:【容器名】
+$ docker run -it --rm -e "proxyurl=【容器名】:【容器端口】" -p 【云服务器端口】:80  --link 【容器名】:【容器名】  fightinggg/tcpproxy
 ```
 
 
